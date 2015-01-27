@@ -7,8 +7,11 @@
   "background": {
     "scripts": ["lib/angular.js"]
   },
-  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "content_security_policy": "script-src 'self' https://api.instagram.com; object-src 'self'",
   "chrome_url_overrides" : {
     "newtab": "index.html"
-  }
+  },
+  "permissions": [
+    "https://api.instagram.com/"
+  ]
 }
